@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/Deng")
-public class Deng extends HttpServlet {
+@WebServlet("/Guanli")
+public class Guanli extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     Dao daa=new Dao();
@@ -29,11 +29,16 @@ public class Deng extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String name = req.getParameter("name");
         int score =Integer.valueOf(req.getParameter("score"));
-        boolean cb =daa.jiansuo1(name,score);
+        boolean cb=false;
+        if(score==95&&name.equals("abc"));
+        {
+            cb =true;
+        }
+
         if(cb) {
             req.setAttribute("message", "登陆成功！");
 //            req.getRequestDispatcher("suc.jsp").forward(req,resp);
-            resp.sendRedirect("suc.jsp");
+            resp.sendRedirect("guanli.jsp");
 
         } else {
             req.setAttribute("message", "登陆失败！");
@@ -62,4 +67,5 @@ public class Deng extends HttpServlet {
     }
 
 }
+
 

@@ -29,6 +29,14 @@
     <input type="submit" value="×¢²á">
 
 </form>
+
+<form action="guan.jsp" method="post">
+
+    <%--<input type="hidden" name="Action" id="Action" value="form1" />--%>
+    <%--<button type="button">submit</button>--%>
+    <input type="submit" value="¹ÜÀíÔ±">
+
+</form>
 </body>
 </html>
 

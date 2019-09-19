@@ -12,5 +12,6 @@
 </head>
 <body>
     <h1>登陆失败</h1>
+    <a href="main.jsp">返回主页</a>
 </body>
 </html>

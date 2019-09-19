@@ -23,6 +23,10 @@
         <!--<servlet-name>Deng</servlet-name>-->
         <!--<url-pattern>/Deng</url-pattern>-->
     <!--</servlet-mapping>-->
+    <servlet>
+        <servlet-name>Guanli</servlet-name>
+        <servlet-class>servlet.Guanli</servlet-class>
+    </servlet>
 </web-app>
 
 
